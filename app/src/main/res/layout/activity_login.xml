@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/et_id_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_pass_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="PW"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_id_lg"
+        app:layout_constraintStart_toStartOf="@+id/et_id_lg"
+        app:layout_constraintTop_toBottomOf="@+id/et_id_lg" />
+
+    <Button
+        android:id="@+id/btn_login_lg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/et_pass_lg"
+        app:layout_constraintStart_toStartOf="@+id/et_pass_lg"
+        app:layout_constraintTop_toBottomOf="@+id/et_pass_lg" />
+
+    <Button
+        android:id="@+id/btn_register_lg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login_lg"
+        app:layout_constraintStart_toStartOf="@+id/btn_login_lg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_lg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
